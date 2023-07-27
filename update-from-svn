@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+svn2git https://svn.code.sf.net/p/sdcc/code --notags --authors authors.txt
