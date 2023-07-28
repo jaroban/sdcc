@@ -1,0 +1,5 @@
+backtrace-supported.h
+config.h
+gstdint.h
+install-debuginfo-for-buildid.sh
+libtool
