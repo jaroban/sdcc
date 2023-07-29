@@ -37,6 +37,10 @@ main.mk
 sdccconf.h
 
 *.vcxproj.user
-**/obj
+**/obj/Debug_x64
+**/bin/Debug_x64
 **/.vs
 
+obj
+*.log
+sdcc_vc.h

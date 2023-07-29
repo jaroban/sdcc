@@ -4938,7 +4938,7 @@ newEnumType (symbol *enumlist)
       SPEC_LONG (type) = 1;
       SPEC_USIGN (type) = 1;
     }
-  else if (min >= -2147483648 && max <= 2147483647)
+  else if (min >= -2147483647 - 1 && max <= 2147483647)
     {
       SPEC_NOUN (type) = V_INT;
       SPEC_LONG (type) = 1;
