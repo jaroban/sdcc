@@ -2,15 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{36ed1d0f-18b0-4751-99cf-8f3e3c6c6af9}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{63c1a458-3e87-4ca3-bd80-b0fe3ce009fc}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Custom Build">
-      <UniqueIdentifier>{efbf5b89-aca8-4e12-ae6a-f2173da55e89}</UniqueIdentifier>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="peeph.def">
-      <Filter>Custom Build</Filter>
+      <Filter>Source Files</Filter>
     </CustomBuild>
   </ItemGroup>
 </Project>

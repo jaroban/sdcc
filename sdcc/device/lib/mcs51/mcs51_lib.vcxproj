@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="crtstart.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtxinit.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtxclear.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtclear.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtpagesfr.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtbank.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtcall.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtxstack.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtxpush.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtxpushr0.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtxpop.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtxpopr0.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gptr_cmp.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="atomic_flag_test_and_set.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="atomic_flag_clear.asm">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdas8051.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="link_mcs51.bat">
+      <FileType>Document</FileType>
+      <Command>call %(FullPath)</Command>
+      <Message>Linking mcs51.lib</Message>
+      <Outputs>mcs51.lib</Outputs>
+      <AdditionalInputs>crtstart.rel;crtxinit.rel;crtxclear.rel;crtclear.rel;crtpagesfr.rel;crtbank.rel;crtcall.rel;crtxstack.rel;crtxpush.rel;crtxpushr0.rel;crtxpop.rel;crtxpopr0.rel;gptr_cmp.rel;atomic_flag_test_and_set.rel;atomic_flag_clear.rel</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{D78D25B4-6C11-1014-B6E8-58EC0E936024}</ProjectGuid>
+    <RootNamespace>mcs51lib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

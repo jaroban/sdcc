@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\bfd">
+      <UniqueIdentifier>{892f613d-2b98-4f7b-9bf5-0d52c8ca2815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\binutils">
+      <UniqueIdentifier>{5cc13a65-e743-4f37-beb7-58705ff0c624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libiberty">
+      <UniqueIdentifier>{79e09ea5-d677-4a9d-9c7d-a0af592be71f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\bfd\archive.c">
+      <Filter>Source Files\bfd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\archures.c">
+      <Filter>Source Files\bfd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\asxxxx.c">
+      <Filter>Source Files\bfd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\bfd.c">
+      <Filter>Source Files\bfd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\bfdio.c">
+      <Filter>Source Files\bfd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\binary.c">
+      <Filter>Source Files\bfd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\cache.c">
+      <Filter>Source Files\bfd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\ar.c">
+      <Filter>Source Files\binutils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\arsup.c">
+      <Filter>Source Files\binutils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\binemul.c">
+      <Filter>Source Files\binutils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\bucomm.c">
+      <Filter>Source Files\binutils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\argv.c">
+      <Filter>Source Files\libiberty</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\asprintf.c">
+      <Filter>Source Files\libiberty</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\concat.c">
+      <Filter>Source Files\libiberty</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\cp-demangle.c">
+      <Filter>Source Files\libiberty</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\coff-z80.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\coffgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\corefile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\cpu-plugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\cpu-z80.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\dwarf2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\format.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\ihex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\libbfd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\linker.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\opncls.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\plugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\reloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\reloc16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\section.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\simple.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\srec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\syms.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\targets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\tekhex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bfd\verilog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\arlex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\arparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\emul_vanilla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\filemode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\not-ranlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\rename.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\binutils\version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\cplus-dem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\d-demangle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\filename_cmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\fnmatch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\getopt1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\getpwd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\hashtab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\hex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\lbasename.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\lrealpath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\make-relative-prefix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\make-temp-file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\mkstemps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\objalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\rust-demangle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\safe-ctype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\unlink-if-ordinary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\vasprintf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\vprintf-support.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\xatexit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\xexit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\xmalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\xmemdup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\xstrdup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libiberty\xstrerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\binutils\arparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binutils\arsup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binutils\binemul.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binutils\bucomm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\bfd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\bfdver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\windows\dirent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\binutils\arlex.l" />
+    <CustomBuild Include="..\binutils\arparse.y" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="argcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="brkcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dregcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="guiobjcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hwcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="itsrccl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iwrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="obsolete.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="port_hwcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="serial_hwcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simifcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stackcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uccl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uccl_instructions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcdcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="arg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="brk.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dreg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="guiobj.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="itsrc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iwrap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mem.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="port_hw.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serial_hw.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sim.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simif.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="var.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcd.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

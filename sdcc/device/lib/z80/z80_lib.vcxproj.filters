@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="link_z80.bat" />
+    <CustomBuild Include="__itoa.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="__ltoa.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="__sdcc_bcall.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="__sdcc_call_hl.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="__sdcc_call_iy.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="__sdcc_critical.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="__strreverse.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="__uitobcd.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="__ultobcd.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\__assert.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_atof.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_divslong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_divslonglong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_divulong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_divulonglong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2schar.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2sint.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2slong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2uchar.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2uint.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2ulong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fsadd.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fsdiv.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fseq.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fslt.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fsmul.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fsneq.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_fssub.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_memcmp.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_memchr.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_memset.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_modslong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_modslonglong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_modulong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_modulonglong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_mullong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_mullonglong.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_schar2fs.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_sint2fs.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_slong2fs.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_startup.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strcat.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strcmp.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strcspn.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strchr.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strncat.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strncmp.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strncpy.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strpbrk.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strrchr.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strspn.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strstr.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_strtok.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_uchar2fs.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_uint2fs.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\_ulong2fs.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="abs.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="atomic_flag_test_and_set.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\cotf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\acosf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\aligned_alloc.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\asincosf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\asinf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\atan2f.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\atanf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\atoi.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\atol.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\atoll.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\atomic_flag_clear.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\bsearch.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\btowc.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\c16rtomb.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\c16stombs.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\c32rtomb.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\calloc.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ceilf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\cosf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\coshf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="divunsigned.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="crt0.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="crtenter.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="divmixed.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="divsigned.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="heap.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ldexpf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\errno.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\expf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\fabsf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\floorf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\free.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\frexpf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\gets.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isalnum.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isalpha.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isblank.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\iscntrl.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isdigit.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isgraph.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isinf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\islower.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isnan.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isprint.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ispunct.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isspace.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isupper.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\isxdigit.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\labs.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\log10f.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\logf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\malloc.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\mblen.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\mbrlen.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\mbrtoc16.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\mbrtoc32.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\mbrtowc.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\mbsinit.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\mbstoc16s.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\mbstowcs.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\mbtowc.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\memccpy.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="strlen.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="strcpy.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="setjmp.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mulchar.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mul.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="modunsigned.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="modsigned.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="modmixed.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="memmove.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="memcpy.s">
+      <Filter>Assembly</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\memset_explicit.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\modff.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\powf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\printf_large.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\puts.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\qsort.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\rand.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\realloc.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\sincosf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\sincoshf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\sinf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\sinhf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\sprintf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\sqrtf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\strdup.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\strndup.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\strtol.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\strtoul.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\strxfrm.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\tancotf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\tanf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\tanhf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\time.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\tolower.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\toupper.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\vprintf.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\wcrtomb.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\wcscmp.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\wcslen.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\wcstombs.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\wctob.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\wctomb.c">
+      <Filter>C</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assembly">
+      <UniqueIdentifier>{bea5036b-5879-4dc3-81b5-2155c1b2b915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C">
+      <UniqueIdentifier>{5fbe8589-b66d-4302-98ba-9c5681bdcf05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

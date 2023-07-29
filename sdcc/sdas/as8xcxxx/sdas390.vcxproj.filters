@@ -1,16 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{f6ebe258-476c-4574-8ffd-370097bc714e}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{bb4757ba-a5e7-4354-8f21-6900f1929dcf}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ds8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\asxxsrc\asxxxx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\asxxsrc\sdas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdcc_vc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\support\util\dbuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\support\util\dbuf_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ds8adr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ds8mch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ds8pst.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\asxxsrc\asdata.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -29,6 +62,9 @@
     <ClCompile Include="..\asxxsrc\asmain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\asxxsrc\asmcro.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\asxxsrc\asout.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -38,49 +74,17 @@
     <ClCompile Include="..\asxxsrc\assym.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\support\util\dbuf.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\support\util\dbuf_string.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ds8adr.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ds8mch.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ds8pst.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\asxxsrc\sdas.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\asxxsrc\strcmpi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\asxxsrc\asmcro.c">
+    <ClCompile Include="..\..\support\util\dbuf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\asxxsrc\asxxxx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\support\util\dbuf.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\support\util\dbuf_string.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ds8.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\asxxsrc\sdas.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\sdcc_vc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="..\..\support\util\dbuf_string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

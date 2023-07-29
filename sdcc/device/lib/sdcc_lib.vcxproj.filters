@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="mcs51">
+      <UniqueIdentifier>{ecfd78d8-ec50-44c7-a1ee-d8645e66aa93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="__assert.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ds390\atomic_flag_clear.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ds390\atomic_flag_test_and_set.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ds390\gptr_cmp.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ds390\i2c390.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ds390\lcd390.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ds390\memcpyx.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ds390\putchar.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ds390\rtc390.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ds390\setjmp.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ds390\tinibios.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\atomic_flag_clear.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\atomic_flag_test_and_set.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtbank.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtcall.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtclear.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtpagesfr.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtstart.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtxclear.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtxinit.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtxpop.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtxpopr0.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtxpush.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtxpushr0.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\crtxstack.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcs51\gptr_cmp.asm">
+      <Filter>mcs51</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -3,8 +3,8 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <IncludePath>C:\Local\boost_1_64_0;$(IncludePath)</IncludePath>
-    <ExecutablePath>C:\Programs\GnuWin32\bin;$(ExecutablePath)</ExecutablePath>
+    <ExecutablePath>C:\gawk;C:\win_flex_bison;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\boost\boost_1_82_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup />
   <ItemGroup />

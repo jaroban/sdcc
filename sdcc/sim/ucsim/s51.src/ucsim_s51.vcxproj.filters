@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="arith.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bit.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glob.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="interrupt.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jmp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logic.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mdu.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mov.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pca.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="port.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="s51.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serial.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sim51.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timer0.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timer1.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timer2.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc51.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc51r.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc52.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc88x.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc89c51r.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc251.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc320.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc380.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc390.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc390hw.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc517.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uc521.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wdt.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="glob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interruptcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mducl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pcacl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="portcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regs51.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="serialcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sim51cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timer0cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timer1cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timer2cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="types51.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc51cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc51rcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc52cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc88xcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc89c51rcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc251cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc320cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc380cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc390cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc390hwcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc517cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uc521cl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wdtcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

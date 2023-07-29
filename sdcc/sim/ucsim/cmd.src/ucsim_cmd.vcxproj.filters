@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cmd_bpcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_confcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_execcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_getcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_guicl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_infocl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_memcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_setcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_showcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_statcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_timercl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_uccl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdlexcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commandcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="newcmdcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="newcmdposixcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="syntaxcl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdpars.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cmd_bp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_conf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_exec.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_get.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_gui.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_info.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_mem.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_set.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_show.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_stat.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_timer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_uc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdutil.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="newcmd.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="newcmdposix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="syntax.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdpars.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdlex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="cmdlex.l" />
+    <CustomBuild Include="cmdpars.y" />
+  </ItemGroup>
+</Project>

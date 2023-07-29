@@ -2,15 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{b613ea3d-3cff-4025-9b3e-8643f2bb4fe6}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{fc0b3ed3-ef96-43d3-a63c-b8e4551b40f6}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Custom Build">
-      <UniqueIdentifier>{6c387ed2-8c02-44f4-904c-683998af7386}</UniqueIdentifier>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -29,9 +30,6 @@
     <ClCompile Include="glue.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="graph.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -48,6 +46,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ralloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graph.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -76,10 +77,16 @@
     <ClInclude Include="ralloc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="genutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="peeph.def">
-      <Filter>Custom Build</Filter>
+      <Filter>Source Files</Filter>
     </CustomBuild>
   </ItemGroup>
 </Project>

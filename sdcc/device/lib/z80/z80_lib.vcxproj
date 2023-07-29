@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="divunsigned.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="divsigned.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="divmixed.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="modunsigned.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="modsigned.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="modmixed.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mul.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mulchar.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="heap.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="memmove.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="strcpy.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="strlen.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="abs.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="__sdcc_call_hl.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="__sdcc_call_iy.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crtenter.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="setjmp.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="atomic_flag_test_and_set.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="memcpy.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="__uitobcd.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="__ultobcd.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="__itoa.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="__ltoa.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="__strreverse.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="__sdcc_bcall.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="__sdcc_critical.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_atof.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2schar.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2sint.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2slong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2uchar.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2uint.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fs2ulong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fsadd.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fsdiv.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fseq.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fslt.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fsmul.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fsneq.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_fssub.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_schar2fs.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_sint2fs.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_slong2fs.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_uchar2fs.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_uint2fs.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_ulong2fs.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\acosf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\asincosf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\asinf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\atan2f.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\atanf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ceilf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\cosf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\coshf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\cotf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\errno.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\expf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\fabsf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\floorf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\frexpf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isinf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isnan.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ldexpf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\log10f.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\logf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\modff.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\powf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\sincosf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\sincoshf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\sinf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\sinhf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\sqrtf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\tancotf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\tanf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\tanhf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_divslong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_modslong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_modulong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_divulong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_mullong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_mullonglong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_divslonglong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_divulonglong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_modslonglong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_modulonglong.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\__assert.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_memcmp.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_memchr.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_memset.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strcat.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strcspn.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strchr.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strncat.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strncmp.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strncpy.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strpbrk.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strrchr.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strspn.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strstr.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strtok.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\aligned_alloc.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\atoi.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\atol.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\atoll.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\bsearch.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\btowc.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\c16rtomb.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\c16stombs.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\c32rtomb.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\calloc.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\free.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\gets.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isalnum.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isalpha.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isblank.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\iscntrl.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isdigit.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isgraph.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\islower.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isprint.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ispunct.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isspace.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isupper.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\isxdigit.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\labs.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\malloc.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\mblen.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\mbrlen.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\mbrtoc16.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\mbrtoc32.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\mbrtowc.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\mbsinit.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\mbstoc16s.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\mbstowcs.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\mbtowc.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\memccpy.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\memset_explicit.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\printf_large.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\puts.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\qsort.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\rand.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\realloc.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\strdup.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\strndup.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\strtol.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\strtoul.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\strxfrm.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\time.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\tolower.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\toupper.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\wcrtomb.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\wcscmp.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\wcslen.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\wcstombs.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\wctob.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\wctomb.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_startup.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\sprintf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\vprintf.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\_strcmp.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\atomic_flag_clear.c">
+      <FileType>CppCode</FileType>
+      <Command>..\..\..\bin_vc\sdcc.exe -mz80 --max-allocs-per-node 25000 -I..\..\include -I. --std-c11 -o obj\ -c %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>obj\%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="crt0.s">
+      <FileType>Document</FileType>
+      <Command>..\..\..\bin_vc\sdasz80.exe -plosgff %(FullPath)</Command>
+      <Message>Compiling %(FullPath)</Message>
+      <Outputs>%(Filename).rel</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="link_z80.bat">
+      <FileType>Document</FileType>
+      <Command>call %(FullPath)</Command>
+      <Message>Linking z80.lib</Message>
+      <Outputs>..\build\z80\z80.lib</Outputs>
+      <AdditionalInputs>divunsigned.rel;divsigned.rel;divmixed.rel;modunsigned.rel;modsigned.rel;modmixed.rel;mul.rel;mulchar.rel;heap.rel;memmove.rel;strcpy.rel;strlen.rel;abs.rel;__sdcc_call_hl.rel;__sdcc_call_iy.rel;crtenter.rel;setjmp.rel;atomic_flag_test_and_set.rel;memcpy.rel;__uitobcd.rel;__ultobcd.rel;__itoa.rel;__ltoa.rel;__strreverse.rel;__sdcc_bcall.rel;__sdcc_critical.rel;obj\_atof.rel;obj\_fs2schar.rel;obj\_fs2sint.rel;obj\_fs2slong.rel;obj\_fs2uchar.rel;obj\_fs2uint.rel;obj\_fs2ulong.rel;obj\_fsadd.rel;obj\_fsdiv.rel;obj\_fseq.rel;obj\_fslt.rel;obj\_fsmul.rel;obj\_fsneq.rel;obj\_fssub.rel;obj\_schar2fs.rel;obj\_sint2fs.rel;obj\_slong2fs.rel;obj\_uchar2fs.rel;obj\_uint2fs.rel;obj\_ulong2fs.rel;obj\acosf.rel;obj\asincosf.rel;obj\asinf.rel;obj\atan2f.rel;obj\atanf.rel;obj\ceilf.rel;obj\cosf.rel;obj\coshf.rel;obj\cotf.rel;obj\errno.rel;obj\expf.rel;obj\fabsf.rel;obj\floorf.rel;obj\frexpf.rel;obj\isinf.rel;obj\isnan.rel;obj\ldexpf.rel;obj\log10f.rel;obj\logf.rel;obj\modff.rel;obj\powf.rel;obj\sincosf.rel;obj\sincoshf.rel;obj\sinf.rel;obj\sinhf.rel;obj\sqrtf.rel;obj\tancotf.rel;obj\tanf.rel;obj\tanhf.rel;obj\_divslong.rel;obj\_modslong.rel;obj\_modulong.rel;obj\_divulong.rel;obj\_mullong.rel;obj\_mullonglong.rel;obj\_divslonglong.rel;obj\_divulonglong.rel;obj\_modslonglong.rel;obj\_modulonglong.rel;obj\__assert.rel;obj\_memcmp.rel;obj\_memchr.rel;obj\_memset.rel;obj\_strcat.rel;obj\_strcspn.rel;obj\_strchr.rel;obj\_strncat.rel;obj\_strncmp.rel;obj\_strncpy.rel;obj\_strpbrk.rel;obj\_strrchr.rel;obj\_strspn.rel;obj\_strstr.rel;obj\_strtok.rel;obj\aligned_alloc.rel;obj\atoi.rel;obj\atol.rel;obj\atoll.rel;obj\bsearch.rel;obj\btowc.rel;obj\c16rtomb.rel;obj\c16stombs.rel;obj\c32rtomb.rel;obj\calloc.rel;obj\free.rel;obj\gets.rel;obj\isalnum.rel;obj\isalpha.rel;obj\isblank.rel;obj\iscntrl.rel;obj\isdigit.rel;obj\isgraph.rel;obj\islower.rel;obj\isprint.rel;obj\ispunct.rel;obj\isspace.rel;obj\isupper.rel;obj\isxdigit.rel;obj\labs.rel;obj\malloc.rel;obj\mblen.rel;obj\mbrlen.rel;obj\mbrtoc16.rel;obj\mbrtoc32.rel;obj\mbrtowc.rel;obj\mbsinit.rel;obj\mbstoc16s.rel;obj\mbstowcs.rel;obj\mbtowc.rel;obj\memccpy.rel;obj\memset_explicit.rel;obj\printf_large.rel;obj\puts.rel;obj\qsort.rel;obj\rand.rel;obj\realloc.rel;obj\strdup.rel;obj\strndup.rel;obj\strtol.rel;obj\strtoul.rel;obj\strxfrm.rel;obj\time.rel;obj\tolower.rel;obj\toupper.rel;obj\wcrtomb.rel;obj\wcscmp.rel;obj\wcslen.rel;obj\wcstombs.rel;obj\wctob.rel;obj\wctomb.rel;obj\_startup.rel;obj\sprintf.rel;obj\vprintf.rel;obj\_strcmp.rel;obj\atomic_flag_clear.rel</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4adfe1ab-c823-494d-8616-1ab9c2e6d428}</ProjectGuid>
+    <RootNamespace>z80lib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

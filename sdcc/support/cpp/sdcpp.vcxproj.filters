@@ -2,38 +2,28 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{9ea8618e-5b35-434a-8483-cbb54ce77efe}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
-    </Filter>
-    <Filter Include="Source Files\libcpp">
-      <UniqueIdentifier>{fbe76a09-a173-490d-b6b2-c513882e3379}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
-    </Filter>
-    <Filter Include="Source Files\libiberty">
-      <UniqueIdentifier>{c359aa07-8032-4d56-bcd1-10116c18ccaa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\win32">
-      <UniqueIdentifier>{91bececb-ff6f-4e1a-ac50-e893b4f567a9}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{27267bd9-1c5d-4e30-b898-aac7cffa3138}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Header Files\libcpp_h">
-      <UniqueIdentifier>{77609fd9-1b04-4cc1-9bc6-9d65fb8799f1}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\libcpp_h\include">
-      <UniqueIdentifier>{4ec4ee85-9d9f-4749-a495-0f3a96079d5f}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
-    </Filter>
-    <Filter Include="Header Files\win32_h">
-      <UniqueIdentifier>{9e3e99c3-3f00-41e5-9964-8e386b8ba272}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    <Filter Include="Source Files\libcpp">
+      <UniqueIdentifier>{b4a237cd-0b1c-4767-a292-3f4da10c2154}</UniqueIdentifier>
     </Filter>
     <Filter Include="Custom Build">
-      <UniqueIdentifier>{8f30d6d7-0e72-4612-b478-b9c5a74ec6cb}</UniqueIdentifier>
+      <UniqueIdentifier>{89211ba4-add8-4484-875d-bdc3b412e366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libcpp_h">
+      <UniqueIdentifier>{ba622be3-f153-4710-b9bc-3e05dce2e7f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libcpp_h\include">
+      <UniqueIdentifier>{c7b29ff6-19ab-4af2-8124-f97a7c684856}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -109,56 +99,56 @@
     <ClCompile Include="libcpp\traditional.c">
       <Filter>Source Files\libcpp</Filter>
     </ClCompile>
+    <ClCompile Include="..\sdbinutils\libiberty\alloca.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\concat.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\fopen_unlocked.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\getpwd.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\hashtab.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\hex.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\lbasename.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\md5.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\obstack.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\safe-ctype.c">
-      <Filter>Source Files\libiberty</Filter>
-    </ClCompile>
-    <ClCompile Include="..\sdbinutils\libiberty\alloca.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\vasprintf.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdbinutils\libiberty\vprintf-support.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\xexit.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\xmalloc.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\xmemdup.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\xstrdup.c">
-      <Filter>Source Files\libiberty</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\sdbinutils\libiberty\xstrerror.c">
-      <Filter>Source Files\libiberty</Filter>
-    </ClCompile>
-    <ClCompile Include="win32\dirent.c">
-      <Filter>Source Files\win32</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -240,9 +230,6 @@
     <ClInclude Include="libcpp\include\symtab.h">
       <Filter>Header Files\libcpp_h\include</Filter>
     </ClInclude>
-    <ClInclude Include="win32\dirent.h">
-      <Filter>Header Files\win32_h</Filter>
-    </ClInclude>
     <ClInclude Include="..\sdbinutils\include\filenames.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -254,6 +241,9 @@
     </ClInclude>
     <ClInclude Include="auto-host.h">
       <Filter>Header Files\libcpp_h\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdbinutils\windows\dirent.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

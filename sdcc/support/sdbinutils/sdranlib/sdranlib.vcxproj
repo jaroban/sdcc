@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\bfd\archive.c" />
+    <ClCompile Include="..\bfd\archures.c" />
+    <ClCompile Include="..\bfd\asxxxx.c" />
+    <ClCompile Include="..\bfd\bfd.c" />
+    <ClCompile Include="..\bfd\bfdio.c" />
+    <ClCompile Include="..\bfd\binary.c" />
+    <ClCompile Include="..\bfd\cache.c" />
+    <ClCompile Include="..\bfd\coff-z80.c" />
+    <ClCompile Include="..\bfd\coffgen.c" />
+    <ClCompile Include="..\bfd\compress.c" />
+    <ClCompile Include="..\bfd\corefile.c" />
+    <ClCompile Include="..\bfd\cpu-plugin.c" />
+    <ClCompile Include="..\bfd\cpu-z80.c" />
+    <ClCompile Include="..\bfd\dwarf2.c" />
+    <ClCompile Include="..\bfd\format.c" />
+    <ClCompile Include="..\bfd\hash.c" />
+    <ClCompile Include="..\bfd\ihex.c" />
+    <ClCompile Include="..\bfd\init.c" />
+    <ClCompile Include="..\bfd\libbfd.c" />
+    <ClCompile Include="..\bfd\linker.c" />
+    <ClCompile Include="..\bfd\opncls.c" />
+    <ClCompile Include="..\bfd\plugin.c" />
+    <ClCompile Include="..\bfd\reloc.c" />
+    <ClCompile Include="..\bfd\reloc16.c" />
+    <ClCompile Include="..\bfd\section.c" />
+    <ClCompile Include="..\bfd\simple.c" />
+    <ClCompile Include="..\bfd\srec.c" />
+    <ClCompile Include="..\bfd\syms.c" />
+    <ClCompile Include="..\bfd\targets.c" />
+    <ClCompile Include="..\bfd\tekhex.c" />
+    <ClCompile Include="..\bfd\verilog.c" />
+    <ClCompile Include="..\binutils\ar.c" />
+    <ClCompile Include="..\binutils\arlex.c" />
+    <ClCompile Include="..\binutils\arparse.c" />
+    <ClCompile Include="..\binutils\arsup.c" />
+    <ClCompile Include="..\binutils\binemul.c" />
+    <ClCompile Include="..\binutils\bucomm.c" />
+    <ClCompile Include="..\binutils\emul_vanilla.c" />
+    <ClCompile Include="..\binutils\filemode.c" />
+    <ClCompile Include="..\binutils\is-ranlib.c" />
+    <ClCompile Include="..\binutils\rename.c" />
+    <ClCompile Include="..\binutils\version.c" />
+    <ClCompile Include="..\libiberty\argv.c" />
+    <ClCompile Include="..\libiberty\asprintf.c" />
+    <ClCompile Include="..\libiberty\concat.c" />
+    <ClCompile Include="..\libiberty\cp-demangle.c" />
+    <ClCompile Include="..\libiberty\cplus-dem.c" />
+    <ClCompile Include="..\libiberty\d-demangle.c" />
+    <ClCompile Include="..\libiberty\filename_cmp.c" />
+    <ClCompile Include="..\libiberty\fnmatch.c" />
+    <ClCompile Include="..\libiberty\getopt.c" />
+    <ClCompile Include="..\libiberty\getopt1.c" />
+    <ClCompile Include="..\libiberty\getpwd.c" />
+    <ClCompile Include="..\libiberty\hashtab.c" />
+    <ClCompile Include="..\libiberty\hex.c" />
+    <ClCompile Include="..\libiberty\lbasename.c" />
+    <ClCompile Include="..\libiberty\lrealpath.c" />
+    <ClCompile Include="..\libiberty\make-relative-prefix.c" />
+    <ClCompile Include="..\libiberty\make-temp-file.c" />
+    <ClCompile Include="..\libiberty\mkstemps.c" />
+    <ClCompile Include="..\libiberty\objalloc.c" />
+    <ClCompile Include="..\libiberty\rust-demangle.c" />
+    <ClCompile Include="..\libiberty\safe-ctype.c" />
+    <ClCompile Include="..\libiberty\unlink-if-ordinary.c" />
+    <ClCompile Include="..\libiberty\vasprintf.c" />
+    <ClCompile Include="..\libiberty\vprintf-support.c" />
+    <ClCompile Include="..\libiberty\xatexit.c" />
+    <ClCompile Include="..\libiberty\xexit.c" />
+    <ClCompile Include="..\libiberty\xmalloc.c" />
+    <ClCompile Include="..\libiberty\xmemdup.c" />
+    <ClCompile Include="..\libiberty\xstrdup.c" />
+    <ClCompile Include="..\libiberty\xstrerror.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\binutils\arlex.l">
+      <FileType>Document</FileType>
+      <Command>flex -8 -f -o..\binutils\%(Filename).c %(FullPath)</Command>
+      <Message>Generating lexer: %(Filename).c</Message>
+      <Outputs>..\binutils\%(Filename).c</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\binutils\arparse.y">
+      <FileType>Document</FileType>
+      <Command>bison -d -v -o ..\binutils\%(Filename).c %(FullPath)</Command>
+      <Message>Generating parser: %(Filename).c</Message>
+      <Outputs>..\binutils\%(Filename).c;..\binutils\%(Filename).h</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\binutils\arparse.h" />
+    <ClInclude Include="..\binutils\arsup.h" />
+    <ClInclude Include="..\binutils\binemul.h" />
+    <ClInclude Include="..\binutils\bucomm.h" />
+    <ClInclude Include="..\windows\bfd.h" />
+    <ClInclude Include="..\windows\bfdver.h" />
+    <ClInclude Include="..\windows\config.h" />
+    <ClInclude Include="..\windows\dirent.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5f7f293a-b6f6-48ec-879e-46f8375b66c7}</ProjectGuid>
+    <RootNamespace>sdranlib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\SDCC.props" />
+    <Import Project="sdranlib_debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\SDCC.props" />
+    <Import Project="sdranlib_release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\SDCC.props" />
+    <Import Project="sdranlib_debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\SDCC.props" />
+    <Import Project="sdranlib_release.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -35,3 +35,8 @@ stamp-h1
 pics.supported
 main.mk
 sdccconf.h
+
+*.vcxproj.user
+**/obj
+**/.vs
+
