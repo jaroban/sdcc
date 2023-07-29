@@ -1,0 +1,5 @@
+*.c
+*.m4c
+stamp
+__pycache__
+MakeList
