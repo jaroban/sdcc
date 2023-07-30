@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Custom Build">
-      <UniqueIdentifier>{e30f1340-df8f-4d26-aed9-cdf8db3a06c3}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cdbFile.c">
@@ -276,13 +273,5 @@
     <Image Include="..\support\scripts\sdcc.ico">
       <Filter>Resource Files</Filter>
     </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="SDCC.lex">
-      <Filter>Custom Build</Filter>
-    </CustomBuild>
-    <CustomBuild Include="SDCC.y">
-      <Filter>Custom Build</Filter>
-    </CustomBuild>
   </ItemGroup>
 </Project>

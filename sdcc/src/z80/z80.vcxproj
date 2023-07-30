@@ -38,131 +38,136 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="peeph.def">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: peeph.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">peeph.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: peeph.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">peeph.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: peeph.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">peeph.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: peeph.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">peeph.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../SDCCpeeph.awk</AdditionalInputs>
     </CustomBuild>
-    <CustomBuild Include="peeph-gbz80.def">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-gbz80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: peeph-gbz80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">peeph-gbz80.rul</Outputs>
+    <CustomBuild Include="peeph-sm83.def">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-gbz80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: peeph-gbz80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">peeph-gbz80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-gbz80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: peeph-gbz80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">peeph-gbz80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule:%(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-gbz80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: peeph-gbz80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">peeph-gbz80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../SDCCpeeph.awk</AdditionalInputs>
     </CustomBuild>
     <CustomBuild Include="peeph-z80.def">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-z80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: peeph-z80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">peeph-z80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-z80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: peeph-z80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">peeph-z80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-z80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: peeph-z80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">peeph-z80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-z80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: peeph-z80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">peeph-z80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../SDCCpeeph.awk</AdditionalInputs>
     </CustomBuild>
     <CustomBuild Include="peeph-r2k.def">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-r2k.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: peeph-r2k.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">peeph-r2k.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-r2k.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: peeph-r2k.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">peeph-r2k.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-r2k.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: peeph-r2k.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">peeph-r2k.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-r2k.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: peeph-r2k.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">peeph-r2k.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../SDCCpeeph.awk</AdditionalInputs>
     </CustomBuild>
     <CustomBuild Include="peeph-tlcs90.def">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-tlcs90.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: peeph-tlcs90.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">peeph-tlcs90.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-tlcs90.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: peeph-tlcs90.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">peeph-tlcs90.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-tlcs90.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: peeph-tlcs90.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">peeph-tlcs90.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-tlcs90.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: peeph-tlcs90.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">peeph-tlcs90.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../SDCCpeeph.awk</AdditionalInputs>
     </CustomBuild>
     <CustomBuild Include="peeph-ez80_z80.def">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-ez80_z80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: peeph-ez80_z80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">peeph-ez80_z80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-ez80_z80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: peeph-ez80_z80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">peeph-ez80_z80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-ez80_z80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: peeph-ez80_z80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">peeph-ez80_z80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-ez80_z80.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: peeph-ez80_z80.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">peeph-ez80_z80.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../SDCCpeeph.awk</AdditionalInputs>
     </CustomBuild>
     <CustomBuild Include="peeph-z80n.def">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-z80n.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: peeph-z80n.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">peeph-z80n.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-z80n.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: peeph-z80n.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">peeph-z80n.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-z80n.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: peeph-z80n.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">peeph-z80n.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph-z80n.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: peeph-z80n.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">peeph-z80n.rul</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;%(Filename).rul</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: %(Filename).rul</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).rul</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../SDCCpeeph.awk</AdditionalInputs>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sdcc_generated.vcxproj">
+      <Project>{1f243cc4-2f0f-4233-9ef5-cf34bfdc13a6}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

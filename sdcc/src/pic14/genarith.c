@@ -963,7 +963,7 @@ void genPlus (iCode *ic)
           size = AOP_SIZE(IC_LEFT(ic)) - AOP_SIZE(IC_RIGHT(ic));
         if (size > 0)
           {
-            symbol *lbl_nosign, *lbl_done;
+            symbol *lbl_nosign, *lbl_done = NULL;
             sign = !(SPEC_USIGN(getSpec(operandType(IC_RIGHT(ic)))));
             if (sign)
               {
@@ -1116,7 +1116,7 @@ void genMinus (iCode *ic)
         int size, opsize, offset = 0, same=0;
         unsigned long lit = 0L;
         int isLit;
-        symbol *lbl_comm, *lbl_next;
+        symbol *lbl_comm, *lbl_next = NULL;
         asmop *left, *right, *result;
 
         FENTRY;

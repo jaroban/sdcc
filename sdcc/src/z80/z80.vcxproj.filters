@@ -64,7 +64,7 @@
     <CustomBuild Include="peeph.def">
       <Filter>Source Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="peeph-gbz80.def">
+    <CustomBuild Include="peeph-sm83.def">
       <Filter>Source Files</Filter>
     </CustomBuild>
     <CustomBuild Include="peeph-z80.def">

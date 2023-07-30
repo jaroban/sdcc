@@ -29,28 +29,8 @@
     <ClInclude Include="ralloc.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="peeph.def">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Peephole Rule: peeph.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">peeph.rul</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Peephole Rule: peeph.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">peeph.rul</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Peephole Rule: peeph.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">peeph.rul</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../SDCCpeeph.awk</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gawk -f ../SDCCpeeph.awk %(FullPath) &gt;peeph.rul</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Peephole Rule: peeph.rul</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">peeph.rul</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../SDCCpeeph.awk</AdditionalInputs>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\config.vcxproj">
-      <Project>{4b94c77e-2fe8-4269-9fb5-6455e1049d94}</Project>
+    <ProjectReference Include="..\sdcc_generated.vcxproj">
+      <Project>{1f243cc4-2f0f-4233-9ef5-cf34bfdc13a6}</Project>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">

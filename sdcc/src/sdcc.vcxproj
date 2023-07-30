@@ -116,20 +116,6 @@
     <Image Include="..\support\scripts\sdcc.ico" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SDCC.lex">
-      <FileType>Document</FileType>
-      <Command>flex -8 -f -o%(Filename)lex.c %(FullPath)</Command>
-      <Message>Generating lexer: %(Filename)lex.c</Message>
-      <Outputs>%(Filename)lex.c</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="SDCC.y">
-      <FileType>Document</FileType>
-      <Command>bison -d -v -o %(Filename)y.c %(FullPath)</Command>
-      <Message>Generating parser: %(Filename)y.c</Message>
-      <Outputs>%(Filename)y.c;%(Filename)y.h</Outputs>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="ds390\ds390.vcxproj">
       <Project>{fdf0b3e3-4c4a-4d90-aa1a-3908489b74f3}</Project>
     </ProjectReference>
@@ -144,6 +130,9 @@
     </ProjectReference>
     <ProjectReference Include="pic16\pic16.vcxproj">
       <Project>{ac211807-f70b-48a2-a51e-0b0941af39a5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="sdcc_generated.vcxproj">
+      <Project>{1f243cc4-2f0f-4233-9ef5-cf34bfdc13a6}</Project>
     </ProjectReference>
     <ProjectReference Include="stm8\stm8.vcxproj">
       <Project>{6014d879-c468-44ce-9f73-7217074876d4}</Project>
